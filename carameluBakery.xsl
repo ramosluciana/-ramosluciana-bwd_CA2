@@ -12,7 +12,8 @@
                             <th>cakeShape</th>
                             <th>size</th>
                             <th>price</th>
-                            
+                            <th>portion</th>
+
                         </tr>
                     </thead>
                     <tbody>
