@@ -8,12 +8,8 @@
                         </tr>
                         <tr>
                             <th>Select</th>
-                            <th>prodTitle</th>
-                            <th>cakeShape</th>
-                            <th>size</th>
-                            <th>price</th>
-                            <th>portion</th>
-
+                            <th>description</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
@@ -47,6 +43,10 @@
 
                                     <td align="right">
                                         <xsl:value-of select="price" />
+                                    </td>
+
+                                    <td align="right">
+                                        <xsl:value-of select="portion" />
                                     </td>
                                 </tr>
                             </xsl:for-each>
