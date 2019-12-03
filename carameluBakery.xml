@@ -67,10 +67,11 @@
     </product-type>   
 
     <product-type name ="Cheese Cakes">
+        <product> 
             <prodTitle>Luxury Cheesecake</prodTitle>
             <price>18.00 </price>
             <description>Round, 8 inch</description>
-       
+        </product>
 
         <product GlutenFree = "true">
                 <prodTitle>Red Velvet Cheesecake</prodTitle>
