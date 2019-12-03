@@ -7,8 +7,9 @@
                             <th colspan="3">Caramelu Bakery</th>
                         </tr>
                         <tr>
-                            <th>Select</th>
-                            <th>description</th>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Description</th>
                             
                         </tr>
                     </thead>
@@ -20,33 +21,21 @@
                                 </td>
                             </tr>
                             <xsl:for-each select="product">
-                                <tr>
-                                    <xsl:attribute name="GlutenFree">
+                                <tr id="{position()}">
+                                        <xsl:attribute name="GlutenFree">
                                         <xsl:value-of select="boolean(./@GlutenFree)" />
                                     </xsl:attribute>
 
                                     <td align="center">
-                                        <input name="item0" type="checkbox" />
-                                    </td>
-
-                                    <td>
                                         <xsl:value-of select="prodTitle" />
                                     </td>
 
-                                    <td align="right">
-                                        <xsl:value-of select="cakeShape" />
-                                    </td>
-
-                                    <td align="right">
-                                        <xsl:value-of select="size" />
-                                    </td>
-
-                                    <td align="right">
+                                    <td>
                                         <xsl:value-of select="price" />
                                     </td>
 
-                                    <td align="right">
-                                        <xsl:value-of select="portion" />
+                                    <td>
+                                        <xsl:value-of select="description" />
                                     </td>
                                 </tr>
                             </xsl:for-each>

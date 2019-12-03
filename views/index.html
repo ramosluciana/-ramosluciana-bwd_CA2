@@ -64,14 +64,50 @@
   <div class="container">
 
     <div class="row">
-      <div class="col-md-8 mb-5">
+      <div class=" mb-5">
         <h2>What We Do</h2>
         <hr>
         <p>The perfect cake, cupcakes and cheesecakes for any occasion. We guarantees a custom designed and hand decorated cake that will delight party guests of all ages</p>
-        <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
-      </div>
-      <div class="col-md-4 mb-5">
-        <h2>Contact Us</h2>
+     </div>
+      <div class=" mb-5">
+
+    <div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<p class="lead">Select your entrees from the menu below.</p>
+			</div>
+            
+			<div id="results" class="col-lg-8 text-center order-3"></div>
+			<div class="col-lg-4 text-center order-2">
+				<form enctype="application/json" action="/post/json" method="post">
+					<div class="form-group">
+						<select class="form-control" name="sec_n">
+							<option value="0">Cakes</option>
+							<option value="1">Cupcakes</option>
+							<option value="2">Cheesecakes</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<input class="form-control" type="text" name="prodTitle" placeholder="Item">
+					</div>
+
+                    <div class="form-group">
+						<input class="form-control" type="text" name="size" placeholder="Size">
+					</div>
+
+					<div class="form-group">
+						<input class="form-control" type="text" name="price" placeholder="Price">
+					</div>
+                    
+					<button type="submit" class="btn btn-primary btn-block">Submit</button>
+				</form>
+                    <button id="delete" class="btn btn-block btn-danger">Delete</button>
+                    <p class="text-muted">To delete an entree, click the required row first</p>
+			</div>
+		</div>
+	</div>
+
+       <h2>Contact Us</h2>
         <hr>
         <address>
           <strong>Caramelu Bakery</strong>
@@ -142,7 +178,7 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="jquery/jquery.min.js"></script>
+  <script src="jquery/jquery.slim.min.js"></script>
   <script src="jquery/table.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
