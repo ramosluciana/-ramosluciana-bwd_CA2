@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:template match="/">
+    
                 <table id="menuTable" class="indent">
                     <thead>
                         <tr>
@@ -25,8 +26,11 @@
                                         <xsl:attribute name="GlutenFree">
                                         <xsl:value-of select="boolean(./@GlutenFree)" />
                                     </xsl:attribute>
-
                                     <td align="center">
+                                        <input name="item0" type="checkbox" />
+                                    </td>
+
+                                    <td >
                                         <xsl:value-of select="prodTitle" />
                                     </td>
 
