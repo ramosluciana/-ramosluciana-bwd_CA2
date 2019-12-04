@@ -105,24 +105,5 @@ server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function() 
   console.log("Server listening at", addr.address + ":" + addr.port);
 });
 
-function highlightGF(idTable, bShowGF) {
-															// if bShowGF is true, then we're highlighting Gluten-Free
-															//	option, otherwise we're unhighlighting them.
-						var i=0;
-						var oTable = document.getElementById(idTable);
 
-						var oTBODY = oTable.getElementsByTagName('TBODY')[0];
-						var aTRs = oTBODY.getElementsByTagName('TR');
-																// walk through each of the table rows and see if it has a 
-																// "Gluten Free" attribute on it.
-						for (i=0; i < aTRs.length; i++) {
-							if (aTRs[i].getAttribute('GlutenFree') && aTRs[i].getAttribute('GlutenFree') == "true") {
-								if (bShowGF){
-									aTRs[i].style.backgroundColor = "lightGreen";
-								} else {
-									aTRs[i].style.backgroundColor = "";
-								};
-							};
-						};
-                    };
             
