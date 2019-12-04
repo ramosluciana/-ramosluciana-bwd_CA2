@@ -24,12 +24,8 @@
                             <xsl:for-each select="product">
                                 <tr id="{position()}">
                                         <xsl:attribute name="GlutenFree">
-                                        <xsl:value-of select="boolean(./@GlutenFree)" />
+                                        <xsl:value-of select="boolean(@GlutenFree)" />
                                     </xsl:attribute>
-                                    <td align="center">
-                                        <input name="item0" type="checkbox" />
-                                    </td>
-
                                     <td >
                                         <xsl:value-of select="prodTitle" />
                                     </td>
