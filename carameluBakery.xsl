@@ -5,12 +5,15 @@
                 <table id="menuTable" class="indent">
                     <thead>
                         <tr>
+                            
                             <th colspan="3">Caramelu Bakery</th>
                         </tr>
                         <tr>
                             <th>Title</th>
                             <th>Price</th>
                             <th>Description</th>
+
+                            <input type="checkbox" name="cbOpts" value="isGF" id="ShowGF" /><label for="ShowGF">Highlight Gluten Free Option</label>
                             
                         </tr>
                     </thead>
