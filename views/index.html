@@ -15,7 +15,6 @@
 
   <!-- Custom styles for this template -->
   <link href="css/carameluBakeryStyles.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -72,16 +71,18 @@
       <div class=" mb-5">
 
     <div class="container">
+    
 		<div class="row">
 			<div class="col-lg-12 text-center">
 				<p class="lead">Select you your item from our menu below.</p>
+                <input type="checkbox" name="cbOpts" value="isGF" id="ShowGF" /><label for="ShowGF">Highlight Gluten Free Option</label>
 			</div>
             
 			<div id="results" class="col-lg-8 text-center order-3"></div>
 			<div class="col-lg-4 text-center order-2">
 				<form enctype="application/json" action="/post/json" method="post">
 					<div class="form-group">
-						<select class="form-control" name="sec_n">
+						<select class="form-control" name="sec_n" >
 							<option value="0">Cakes</option>
 							<option value="1">Cupcakes</option>
 							<option value="2">Cheesecakes</option>
@@ -107,40 +108,6 @@
                     <button id="delete" class="btn btn-block btn-danger">Delete</button>
                     <p class="text-muted">To delete an item, click the required row first</p>
 			</div>
-
-<script>
-function highlightGF(idTable, bShowGF) {
-															// if bShowGF is true, then we're highlighting Gluten-Free
-															//	option, otherwise we're unhighlighting them.
-						var i=0;
-						var oTable = document.getElementById(idTable);
-
-						var oTBODY = oTable.getElementsByTagName('TBODY')[0];
-						var aTRs = oTBODY.getElementsByTagName('TR');
-																// walk through each of the table rows and see if it has a 
-																// "Gluten Free" attribute on it.
-						for (i=0; i < aTRs.length; i++) {
-							if (aTRs[i].getAttribute('GlutenFree') && aTRs[i].getAttribute('GlutenFree') == "true") {
-								if (bShowGF){
-									aTRs[i].style.backgroundColor = "lightGreen";
-								} else {
-									aTRs[i].style.backgroundColor = "";
-								};
-							};
-						};
-                    };
-
- </script>
-
-            <script>
-                 window.addEventListener("load", function() {
-                    document.querySelector("#showGF").addEventListener("click", function() {
-                    highlightGF('menuTable', this.checked)
-                       })
-			        });
-             </script>
-
-            
 		</div>
 	</div>
 
@@ -218,7 +185,34 @@ function highlightGF(idTable, bShowGF) {
   <script src="jquery/jquery.js"></script>
   <script src="jquery/table.js"></script>
   <script src="js/bootstrap.min.js"></script>
-
+  <script>
+    function highlightGF(idTable, bShowGF) {
+                                            // if bShowVeg is true, then we're highlighting vegetarian
+                                            //	meals, otherwise we're unhighlighting them.
+        var i=0;
+        var oTable = document.getElementById(idTable);
+        var oTBODY = oTable.getElementsByTagName('TBODY')[0];
+        var aTRs = oTBODY.getElementsByTagName('TR');
+                                                // walk through each of the table rows and see if it has a 
+                                                // "vegetarian" attribute on it.
+        for (i=0; i < aTRs.length; i++) {
+            if (aTRs[i].getAttribute('GlutenFree') && aTRs[i].getAttribute('GlutenFree') == "true") {
+                if (bShowGF){
+                    aTRs[i].style.backgroundColor = "lightGreen";
+                } else {
+                    aTRs[i].style.backgroundColor = "";
+                };
+            };
+        };
+    };
+  </script>
+  <script>
+  window.addEventListener("load", function() {
+    document.querySelector("#ShowGF").addEventListener("click", function() {
+    highlightGF('menuTable', this.checked)
+    })
+  });
+  </script>
 </body>
 
 </html>

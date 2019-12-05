@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+
+
     <xsl:template match="/">
     
                 <table id="menuTable" class="indent">
@@ -12,15 +14,13 @@
                             <th>Title</th>
                             <th>Price</th>
                             <th>Description</th>
-
-                            <input type="checkbox" name="cbOpts" value="isGF" id="ShowGF" /><label for="ShowGF">Highlight Gluten Free Option</label>
-                            
                         </tr>
                     </thead>
                     <tbody>
                         <xsl:for-each select="/carameluBakery/product-type">
                             <tr>
-                                <td colspan="3">
+                                <td colspan="3" >
+
                                     <xsl:value-of select="@name" />
                                 </td>
                             </tr>
