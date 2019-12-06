@@ -1,90 +1,103 @@
 <?xml version="1.0"?> 
 <?xml-stylesheet type="text/xsl" href="carameluBakery.xsl"?>
 <carameluBakery>
-    <product-type name ="Cakes">
+    <producttype name ="Cakes">
         <product> 
+               <selectProd></selectProd>
                <prodTitle>Layered rainbow cake</prodTitle>
                <price>45.00 </price>
                <description>Round, 10 inch </description>
         </product>
         
         <product> 
+                <selectProd></selectProd>
                 <prodTitle>Lemon coconut cake</prodTitle>
                 <price>25.00 </price>
                 <description>Round, 8 inch </description>  
         </product>
 
         <product GlutenFree = "true"> 
+                <selectProd></selectProd>
                 <prodTitle>Belgian Chocolate Forest Fruit</prodTitle>
                 <price>35.00 </price>
                 <description>Round, 8 inch </description>
         </product>
 
         <product>
+                <selectProd></selectProd>
                 <prodTitle>Chocolate Biscuit Cake</prodTitle>
                 <price>100.00 </price>
                 <description>Square, 12 inch </description>
         </product>
 
         <product GlutenFree = "true"> 
+                <selectProd></selectProd>
                 <prodTitle>Flourless orange cake</prodTitle>
                 <price> 20.00 </price>
                 <description>Round, 8 inch </description>  
         </product>
 
         <product>
+                <selectProd></selectProd>
                 <prodTitle>All Meringue </prodTitle>
                 <price>60.00 </price>
                 <description>Square, 14 inch </description>  
         </product>
-    </product-type>
+    </producttype>
 
-    <product-type name ="Cupcakes">
+    <producttype name ="Cupcakes">
         <product> 
+                <selectProd></selectProd>
                 <prodTitle>Oreo Swirl </prodTitle>
                 <price>2.50 </price>
                 <description>Individual </description>  
         </product>
 
         <product> 
+                <selectProd></selectProd>
                 <prodTitle>Strawberry </prodTitle>
                 <price>2.50 </price>
                 <description>Individual </description>
         </product>
 
         <product GlutenFree = "true"> 
+                <selectProd></selectProd>
                 <prodTitle> Chocolate Orange </prodTitle>
                 <price>3.00 </price>
                 <description>Individual </description>
         </product>
 
         <product> 
+                <selectProd></selectProd>
                 <prodTitle>Mixed Box </prodTitle>
                 <price>24.00 </price>
                 <description>Gift Box of 12 cupcakes</description>
         </product>
 
-    </product-type>   
+    </producttype>   
 
-    <product-type name ="Cheese Cakes">
+    <producttype name ="Cheese Cakes">
         <product> 
+            <selectProd></selectProd>
             <prodTitle>Luxury Cheesecake</prodTitle>
             <price>18.00 </price>
             <description>Round, 8 inch</description>
         </product>
 
         <product GlutenFree = "true">
+                <selectProd></selectProd>
                 <prodTitle>Red Velvet Cheesecake</prodTitle>
                 <price>25.00 </price>
                 <description>Round, 10 inch</description>
         </product>
 
         <product>   
+                <selectProd></selectProd>
                 <prodTitle>Lemon Meringue Cheesecake</prodTitle>
                 <price>33.00 </price>
                 <description>Round, 12 inch</description>
         </product>
 
-    </product-type> 
+    </producttype> 
 
 </carameluBakery>
