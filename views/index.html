@@ -106,7 +106,8 @@
 				</form>
                     <button id="delete" class="btn btn-block btn-danger">Delete</button>
                     <p class="text-muted">To delete an item, click the required row first</p>
-                 <form>
+
+                     <form>
                     <div class="input-group">
                         <div class="input-group-prepend">
                                                         <span class="input-group-text">&euro;</span>
@@ -116,7 +117,6 @@
                     </div>
                     
                 </form>
-
 			</div>
 		</div>
 	</div>
@@ -218,15 +218,15 @@
   </script>
   <script>
   window.addEventListener("load", function() {
-       document.forms[1].txtBillAmt.value = calculateBill('menuTable');
+    document.querySelector("#ShowGF").addEventListener("click", function() {
+    highlightGF('menuTable', this.checked)
+    })
+
+        document.forms[1].txtBillAmt.value = calculateBill('menuTable');
             document.querySelector("#calcBill").addEventListener("click", function() {
                 document.forms[1].txtBillAmt.value = calculateBill('menuTable');
             });
 
-
-    document.querySelector("#ShowGF").addEventListener("click", function() {
-    highlightGF('menuTable', this.checked)
-    })
   });
   </script>
 </body>
