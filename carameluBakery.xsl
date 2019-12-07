@@ -18,7 +18,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <xsl:for-each select="/carameluBakery/product-type">
+                        <xsl:for-each select="/carameluBakery/producttype">
                             <tr>
                                 <td colspan="4" >
 
@@ -33,36 +33,6 @@
                                      
                                     <td >
                                     <input name="selectProd" type="checkbox" />
-                                    
-                                    
-
-
-
-
-
-
-
-                                       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                     kbnkbglgkgjklfgujkfjghjkl
-
-
-
-
-                                     
                                     </td>
 
                                     <td >
