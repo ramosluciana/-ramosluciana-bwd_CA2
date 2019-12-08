@@ -38,3 +38,7 @@ table, th, td {
      font-weight: bold;
      text-align: center;
 }
+.selected {
+            background-color: #dc3545;
+            color: #FFF;
+}

@@ -40,8 +40,8 @@ function delete_row(prodT, prod)
 			type: "POST",
 			data:
 			{
-				producttype: prodT,
-				product: prod
+				productT: prodT,
+				productN: prod
 			},
 			cache: false,
 			success: setTimeout(draw_table, 1000)
