@@ -7,7 +7,7 @@ Caramelu Bakery is e-commerce web application where you can have access to our C
 
 The application also allows to insert or delete a product.
 
-To develop the application the follow technologies:
+To develop the application the follow technologies was used:
 XML – to store data;
 XSL - to transforming the XML document;
 HTML – to describes the structure of the web page focusing on client-side consumption;
